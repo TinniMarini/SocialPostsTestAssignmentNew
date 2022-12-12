@@ -16,7 +16,6 @@ public class BaseMethods {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("platformVersion", "10.0");
-        capabilities.setCapability("appActivity", "com.socialpoststestassigmentnew.MainActivity");
 
         driver = new AndroidDriver(new URL("http://168.0.0.1:8888/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
